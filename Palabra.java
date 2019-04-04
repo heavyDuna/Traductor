@@ -1,5 +1,5 @@
 
-public class Palabra implements Traducible {
+public class Palabra implements Traducible, Comparable {
 
 	private String palabra;
 
@@ -17,6 +17,10 @@ public class Palabra implements Traducible {
 		this.palabra = palabra;
 	}
 
+	public String getPalabra() {
+		return palabra;
+	}
+
 	@Override
 	public String toString() {
 		return "Palabra: " + palabra;
@@ -32,6 +36,14 @@ public class Palabra implements Traducible {
 	public double coste() {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		Palabra t = (Palabra) o;
+
+		return this.palabra.compareTo(t.palabra);
+
 	}
 
 }
