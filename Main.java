@@ -20,8 +20,8 @@ public class Main {
 		Diccionario d1 = new Diccionario();
 		Palabra p4 = new Palabra();
 		Palabra p5 = new Palabra();
-		p4.setPalabra("mierda");
-		p5.setPalabra("shit");
+		p4.setPalabra("perro");
+		p5.setPalabra("dog");
 		
 		Palabra p6 = new Palabra("hola");
 		Palabra p7 = new Palabra("hello");
@@ -31,7 +31,7 @@ public class Main {
 		
 		
 		System.out.println(d1);
-		System.out.println(d1.traduce(p6));
+		System.out.println(d1.traduce(p4));
 
 	}
 
