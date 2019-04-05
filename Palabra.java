@@ -27,7 +27,8 @@ public class Palabra implements Traducible, Comparable {
 	}
 
 	@Override
-	public void traduce() {
+	public String traduce(Diccionario d) {
+		return palabra;
 		// TODO Auto-generated method stub
 
 	}

@@ -13,20 +13,30 @@ public class Texto implements Traducible {
 		this.texto = texto;
 	}
 
-	public void addPalabra(Palabra p) {
+	public void addTexto(String t) {
 
-		this.texto.add(p);
+		this.texto.dividir(t);
 
 	}
 
 	@Override
 	public String toString() {
-		return "Texto: "+ texto;
+		return "Texto: " + texto;
 	}
 
 	@Override
-	public void traduce() {
-		// TODO Auto-generated method stub
+	public String traduce(Diccionario d) {
+
+		Nodo p;
+		p = this.texto.getCom();
+		String pals = " ";
+		while (p != null) {
+
+			pals = pals + d.traduce(p.getInfo());
+			p = p.getSig();
+		}
+		
+		return pals;
 
 	}
 

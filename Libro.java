@@ -14,14 +14,14 @@ public class Libro implements Traducible {
 	}
 
 	@Override
-	public void traduce() {
-		// TODO Auto-generated method stub
+	public String traduce(Diccionario d) {
+		return null;
 
 	}
 
 	@Override
 	public double coste() {
-		// TODO Auto-generated method stub
+
 		return 0;
 	}
 

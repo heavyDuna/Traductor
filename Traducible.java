@@ -1,7 +1,7 @@
 
 public interface Traducible {
 	
-	public void traduce();
+	public String traduce(Diccionario d);
 	public double coste();
 
 }

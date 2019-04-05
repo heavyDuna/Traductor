@@ -46,7 +46,21 @@ public class Lista {
 		}
 	}
 
+	public void dividir(String texto) {
 
+		String[] palabras = texto.split(" ");
+
+		for (int i = 0; i < palabras.length; i++) {
+
+			add(new Palabra(palabras[i]));
+		}
+
+	}
+	
+	public void traduceTexto() {
+		
+		
+	}
 
 	public String toString() {
 
@@ -55,7 +69,7 @@ public class Lista {
 
 		while (p != null) {
 
-			l = l+p;
+			l = l + p;
 			p = p.getSig();
 		}
 
